@@ -1,0 +1,46 @@
+/* styles.css */
+/* styles.css */
+.experience-container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    margin-left: 50px; 
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: auto; /* Adjust the max-width as needed */
+}
+
+.duration-column {
+    width: 20%;
+    padding: 20px;
+    background-color: #1f2428;
+}
+
+.details-column {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ccc; /* Add border around the details column */
+    box-sizing: border-box;
+}
+
+.details {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.duration{
+    font-size: 18px;
+    color: white;
+    padding-top: 15px;
+}

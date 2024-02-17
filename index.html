@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'main.html'%}
+{% load static %}
+{% block content %}
+    {% include 'navbar.html' %}
+    <section class="hero">
+        <div class="hero--content">
+            <div class="hero--content-intro">
+                <img id="profile_pic" src="{% static 'images/profile.jpeg' %}">
+                <h1 class="intro--name"> Viraj <br> Patel </h1>
+            </div>
+            <div class="hero--content--subheadline">
+                <h3 class="description">Data Scientist</h3>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        
+    </section>
+{% endblock content %}

@@ -1,0 +1,41 @@
+.about-container {
+    max-width: 1225px;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.about-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 0 0 8px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Snell Roundhand','cursive';
+    align-items: center;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 2;
+}
+
+

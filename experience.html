@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Viraj Patel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {% comment %} <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/main.css'%}">  {% endcomment %}
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/experience.css'%}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {%for experience in experiences %}
+    <div class="experience-container">
+        <div class="duration-column">
+            <!-- Duration Section -->
+            <div class="duration">
+                <h10>{{ experience.start }} &nbsp&nbsp {{experience.end}}</h10>
+                <!-- Add your duration information here -->
+            </div>
+        </div>
+        <div class="details-column">
+            <!-- Details Section -->
+            <div class="details">
+                <h2>{{ experience.title }}</h2>
+                <p>{{ experience.company_name }}</p>
+                <p>
+                    {% for sentence in experience.detail.splitlines %}
+                        <li>{{ sentence }}</li>
+                    {% endfor %}
+                </p>
+                <!-- Add your position, company name, and details here -->
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</body>
+</html>
+
+</body>
+</html>

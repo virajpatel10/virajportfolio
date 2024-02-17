@@ -1,0 +1,66 @@
+.navigation-bar{
+    background-color: #1f2428;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.hero{
+    background-color: #1f2428;
+    min-height: 100vh;
+    color: rgb(57, 52, 52);
+}
+
+#profile_pic{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero--content{
+    width: 800px;
+    margin: 0 auto;
+    padding: 8em;
+}
+
+.hero--content-intro{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.intro--name{
+    letter-spacing: .1em;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.description{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.hero--content--subheadline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media(max-width:900px){
+    .hero--content-intro{
+        flex-direction: column;
+    }
+}

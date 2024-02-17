@@ -1,0 +1,48 @@
+.education-container {
+    max-width: auto;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.education-image {
+    flex: 1;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.education-image img {
+    width: 100%;
+    
+    border-radius: 8px 0 0 8px;
+}
+
+.education-entry{
+    flex: 1;
+    padding: 50px;
+}
+
+.education-entry h3 {
+    color: #2c3e50;
+}
+
+.education-entry p {
+    margin: 10px 0;
+}
+
+
+@media (max-width: 900px) {
+    body {
+        font-size: 14px;
+    }
+    section{
+        flex-direction:column;
+    }
+}

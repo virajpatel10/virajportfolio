@@ -1,0 +1,129 @@
+{% load static %}
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Viraj Patel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {% comment %} <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/main.css'%}">  {% endcomment %}
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/skills.css'%}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <section class="skill-section">
+        <div class="program_title">
+            <h2 > Programming Language </h2>
+        </div>
+        <div class="skills-1">
+            {% for skill in Program_language_list_1 %}
+                <div class="skill">
+                    <div class="skill-name" >{{ skill.title }}</div> 
+                    <div class="skill-bar">
+                        <div class="skill-per" per="{{ skill.percentage }}%" style="max-width:{{ skill.percentage }}%"></div> 
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="skills-2">
+            {% for skill in Program_language_list_2 %}
+                <div class="skill">
+                    <div class="skill-name" >{{ skill.title }}</div> 
+                    <div class="skill-bar">
+                        <div class="skill-per" per="{{ skill.percentage }}%" style="max-width:{{ skill.percentage }}%"></div> 
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </section>
+
+    <section class="skill-section">
+        <div class="title">
+            <h2 > Technology </h2>
+        </div>
+        <div class="skills-1">
+            {% for skill in Technology_list_1 %}
+                <div class="skill">
+                    <div class="skill-name" >{{ skill.title }}</div> 
+                    <div class="skill-bar">
+                        <div class="skill-per" per="{{ skill.percentage }}%" style="max-width:{{ skill.percentage }}%"></div> 
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="skills-2">
+            {% for skill in Technology_list_2 %}
+                <div class="skill">
+                    <div class="skill-name" >{{ skill.title }}</div> 
+                    <div class="skill-bar">
+                        <div class="skill-per" per="{{ skill.percentage }}%" style="max-width:{{ skill.percentage }}%"></div> 
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </section>
+
+    <section class="skill-section">
+        <div class="title">
+            <h2 > Framework </h2>
+        </div>
+        <div class="skills-1">
+            {% for skill in Framework_list_1 %}
+                <div class="skill">
+                    <div class="skill-name" >{{ skill.title }}</div> 
+                    <div class="skill-bar">
+                        <div class="skill-per" per="{{ skill.percentage }}%" style="max-width:{{ skill.percentage }}%"></div> 
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="skills-2">
+            {% for skill in Framework_list_2 %}
+                <div class="skill">
+                    <div class="skill-name" >{{ skill.title }}</div> 
+                    <div class="skill-bar">
+                        <div class="skill-per" per="{{ skill.percentage }}%" style="max-width:{{ skill.percentage }}%"></div> 
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </section>
+
+    <section class="skill-section">
+        <div class="title">
+            <h2 > Soft Skills </h2>
+        </div>
+        <div class="skills-1">
+            {% for skill in Soft_skills_list_1 %}
+                <div class="skill">
+                    <div class="skill-name" >{{ skill.title }}</div> 
+                    <div class="skill-bar">
+                        <div class="skill-per" per="{{ skill.percentage }}%" style="max-width:{{ skill.percentage }}%"></div> 
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="skills-2">
+            {% for skill in Soft_skills_list_2 %}
+                <div class="skill">
+                    <div class="skill-name" >{{ skill.title }}</div> 
+                    <div class="skill-bar">
+                        <div class="skill-per" per="{{ skill.percentage }}%" style="max-width:{{ skill.percentage }}%"></div> 
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </section>
+
+</body>
+</html>

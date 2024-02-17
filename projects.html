@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Viraj Patel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {% comment %} <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/main.css'%}">  {% endcomment %}
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/projects.css'%}">
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    {% for project in projects %}
+    <section>
+        <h3>{{ project.title }} </h3>
+        <p>
+            {% comment %} {{ project.body|linebreaksbr|unordered_list }} {% endcomment %}
+            {% for sentence in project.body.splitlines %}
+                <li>{{ sentence }}</li>
+            {% endfor %}
+        </p>
+
+    </section>
+    {%endfor%}
+
+</body>
+</html>
