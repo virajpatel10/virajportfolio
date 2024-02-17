@@ -1,11 +1,11 @@
 {
     "builds": [{
-        "Src":"virajportfolio/wsgi.py",
+        "src":"virajportfolio/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdasize": "15mb", "runtime": "python3.9" }
     }], "routes":
     {
-        "Src": "/(.*)",
+        "src": "/(.*)",
         "dest": "virajportfolio/wsgi.py"
     }
 }
